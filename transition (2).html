@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+div{
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    background-color: blue;
+    color: aliceblue;
+    transition: all  8s ;
+}
+div:hover{
+    transform:translateX(100px) ;
+}
+/* 
+how the transition takes place
+transition-timing-function:
+transition:all 3s here 5s;
+ease = default
+ease = slow start, fast, slow end
+linear = same speed start to end
+ease-in = slow start
+ease-out = slow end
+ease-in-out = slow start, fast, slow end
+
+*/
+.default{
+    transition-timing-function: ease;
+}
+.ease{
+    transition-timing-function: ease;
+}
+.linear{
+    transition-timing-function: linear;
+}
+.ease-in{
+    transition-timing-function: ease-in;
+}
+.ease-out{
+    transition-timing-function: ease-out;
+}
+ease-in-out{
+    transition-timing-function: ease-in-out;
+}
+    </style>
+</head>
+<body>
+<div class="default">default</div>    
+<div class="ease">ease</div>    
+<div class="linear">linaer</div>    
+<div class="ease-in">ease-in</div>    
+<div class="ease-out">ease-out</div>    
+<div class="ease-in-out">ease-in-out</div>    
+</body>
+</html>
